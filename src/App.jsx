@@ -1,10 +1,12 @@
-// import "./App.css";
-import ToDo from "./componets/Todo/ToDo";
+import { BioProvider } from "./componets/ContexAPI/CreatContext";
+import Home from "./componets/Home/Home";
 
 function App() {
   return (
     <>
-      <ToDo />
+      <BioProvider>
+        <Home />
+      </BioProvider>
     </>
   );
 }
